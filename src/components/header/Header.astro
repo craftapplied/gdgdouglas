@@ -1,0 +1,17 @@
+---
+import Brand from './Brand.astro';
+import Navigation from './Navigation.tsx';
+---
+
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute h-fit w-fit">
+  Skip to content
+</a>
+
+<header id="header">
+  <div class="container">
+    <nav>
+      <Brand />
+      <Navigation client:load />
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,19 @@
+---
+const menuItems = [
+  { title: 'Upcoming Events', url: '#upcoming-events' },
+  { title: 'Past Events', url: '#past-events' },
+  { title: 'Organisers', url: '#organisers' },
+];
+---
+
+{
+  menuItems && (
+    <ul>
+      {menuItems.map((item) => (
+        <li>
+          <a href={item.url}>{item.title}</a>
+        </li>
+      ))}
+    </ul>
+  )
+}
