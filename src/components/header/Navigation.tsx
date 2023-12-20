@@ -25,11 +25,16 @@ function Navigation() {
     <>
       <div
         classList={{
-          'fixed inset-0 grid isolate': menuOpen(),
+          'fixed inset-0 grid isolate bg-white m-4 rounded-4 text-primary-black grid-rows-[max-content_1fr] p-8 text-center':
+            menuOpen(),
         }}
         class="navigation-wrapper"
       >
-        <button onClick={toggleNavigation} class="md:hidden">
+        <button
+          onClick={toggleNavigation}
+          class="md:hidden"
+          classList={{ 'ml-auto': menuOpen() }}
+        >
           <span
             class="open-menu-wrapper"
             classList={{
@@ -53,16 +58,21 @@ function Navigation() {
         </button>
 
         <ul
-          class="flex gap-8"
+          class=""
           classList={{
-            '': menuOpen(),
-            'hidden md:flex': !menuOpen(),
+            'grid my-auto text-headline-sm sm:text-headline-lg !font-bold gap-16 p-8':
+              menuOpen(),
+            'hidden gap-8 md:flex': !menuOpen(),
           }}
         >
           <For each={menuItems()}>
             {(item) => (
               <li>
-                <NavLink item={item} />
+                <NavLink
+                  item={item}
+                  menuOpen={menuOpen}
+                  setMenuOpen={setMenuOpen}
+                />
               </li>
             )}
           </For>

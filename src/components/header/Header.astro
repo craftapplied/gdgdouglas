@@ -7,9 +7,12 @@ import Navigation from './Navigation.tsx';
   Skip to content
 </a>
 
-<header id="header" class="text-white py-6 text-body-md md:mt-6 xl:mt-12 mb-20">
+<header
+  id="header"
+  class="text-primary-white py-6 text-body-md md:mt-6 xl:mt-12 md:mb-10 xl:mb-20"
+>
   <div class="container">
-    <nav class="flex flex-wrap justify-between items-center">
+    <nav class="flex flex-wrap gap-8 justify-between items-center">
       <Brand />
       <Navigation client:load />
     </nav>
