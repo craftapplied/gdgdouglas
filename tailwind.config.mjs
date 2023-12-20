@@ -68,6 +68,19 @@ export default {
 		colors: {
 			...customColours,
 		},
+		container: {
+      center: true,
+      padding: {
+        DEFAULT: '0',
+      },
+      screens: {
+        sm: '100%',
+        md: '72.25rem',
+        lg: '72.25rem',
+        xl: '72.25rem',
+        '2xl': '72.25rem',
+      }
+    },
 		boxShadow: {
 			100: '0 0.125rem 0.5rem 0 rgba(1, 43, 115, 0.12)',
 			200: '0 0.25rem 0.75rem 0 rgba(1, 43, 115, 0.16)',
@@ -75,7 +88,7 @@ export default {
 			400: '0 0.5rem 2rem 0 rgba(1, 43, 115, 0.16)'
 		},
 		fontFamily: {
-			sans: '"Google Sans Display", sans-serif'
+			sans: ['Google Sans Display', 'sans-serif']
 		},
 		fontSize: {
 			'display-lg': ['5rem', {
