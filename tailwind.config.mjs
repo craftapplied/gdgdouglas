@@ -76,12 +76,34 @@ export default {
 			'paragraph-200': ['0.875rem', 1.5],
 			'paragraph-300': ['0.75rem', 1.5],
 			'paragraph-400': ['0.625rem', 1.5],
-			'button-100': ['1rem', 1],
-			'button-200': ['0.75rem', 1],
-			'label-100': ['1rem', 1],
-			'label-200': ['0.875rem', 1],
-			'label-300': ['0.75rem', 1],
-			'label-400': ['0.625rem', 1]
+			'button-100': ['1rem', {
+				lineHeight: 1,
+				letterSpacing: '0.02rem'
+			}],
+			'button-200': ['0.75rem', {
+				lineHeight: 1,
+				letterSpacing: '0.025rem'
+			}],
+			'label-100': ['1rem', {
+				lineHeight: 1,
+				letterSpacing: '0.02rem'
+			}],
+			'label-200': ['0.875rem', {
+				lineHeight: 1,
+				letterSpacing: '0.0175rem'
+			}],
+			'label-300': ['0.75rem', {
+				lineHeight: 1,
+				letterSpacing: '0.015rem'
+			}],
+			'label-400': ['0.625rem', {
+				lineHeight: 1,
+				letterSpacing: '0.0125rem'
+			}]
+		},
+		fontWeight: {
+			regular: '400',
+			bold: '700'
 		},
 		textColors: {
 			primary: {
