@@ -65,10 +65,24 @@ const customColours = {
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
 		colors: {
 			...customColours,
-		}
+		},
+		textColors: {
+			primary: {
+				black: customColours.neutral[700],
+				white: customColours.white.DEFAULT
+			},
+			secondary: {
+				black: 'rgba(32, 33, 36, 0.8)',
+				white: 'rgba(255, 255, 255, 0.75)'
+			},
+			disabled: {
+				black: 'rgba(32, 33, 36, 0.65)',
+				white: 'rgba(255, 255, 255, 0.6)'
+			},
+		},
+		extend: {},
 	},
 	plugins: [],
 }
