@@ -75,13 +75,36 @@ export default {
 			400: '0 0.5rem 2rem 0 rgba(1, 43, 115, 0.16)'
 		},
 		fontSize: {
+			'display-lg': ['5rem', {
+				lineHeight: 1.25,
+				letterSpacing: '-0.03125rem'
+			}],
+			'display-sm': ['3.5rem', {
+				lineHeight: 1.25,
+				letterSpacing: '-0.03125rem'
+			}],
+			'headline-lg': ['2.5rem', 1.25],
+			'headline-sm': ['1.5rem', 1.25],
 			'headline-100': ['2.25rem', 1.25],
 			'headline-200': ['1.5rem', 1.25],
 			'headline-300': ['1.25rem', 1.25],
+			'subtitle-lg': ['1rem', {
+				lineHeight: 1.33,
+				letterSpacing: '0.01rem'
+			}],
+			'paragraph-50': ['1.25rem', 1.5],
 			'paragraph-100': ['1rem', 1.5],
 			'paragraph-200': ['0.875rem', 1.5],
 			'paragraph-300': ['0.75rem', 1.5],
 			'paragraph-400': ['0.625rem', 1.5],
+			'body-md': ['1rem', {
+				lineHeight: 1.5,
+				letterSpacing: '0.03125rem'
+			}],
+			'button-50': ['1.25rem', {
+				lineHeight: 1,
+				letterSpacing: '0.025rem'
+			}],
 			'button-100': ['1rem', {
 				lineHeight: 1,
 				letterSpacing: '0.02rem'
