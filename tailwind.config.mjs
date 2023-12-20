@@ -74,6 +74,9 @@ export default {
 			300: '0 0.5rem 1rem 0 rgba(1, 43, 115, 0.12)',
 			400: '0 0.5rem 2rem 0 rgba(1, 43, 115, 0.16)'
 		},
+		fontFamily: {
+			sans: '"Google Sans Display", sans-serif'
+		},
 		fontSize: {
 			'display-lg': ['5rem', {
 				lineHeight: 1.25,
