@@ -21,8 +21,8 @@
 @font-face {
   font-family: 'Google Sans Display';
   src: local('Google Sans Display Bold'), local('GoogleSansDisplay-Bold'),
-      url('/fonts.GoogleSansDisplay-Bold.woff2') format('woff2'),
-      url('/GoogleSansDisplay-Bold.woff') format('woff');
+      url('/fonts/GoogleSansDisplay-Bold.woff2') format('woff2'),
+      url('/fonts/GoogleSansDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: block;

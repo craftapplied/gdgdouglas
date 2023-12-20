@@ -150,19 +150,13 @@ export default {
 			regular: '400',
 			bold: '700'
 		},
-		textColors: {
-			primary: {
-				black: customColours.neutral[700],
-				white: customColours.white.DEFAULT
-			},
-			secondary: {
-				black: 'rgba(32, 33, 36, 0.8)',
-				white: 'rgba(255, 255, 255, 0.75)'
-			},
-			disabled: {
-				black: 'rgba(32, 33, 36, 0.65)',
-				white: 'rgba(255, 255, 255, 0.6)'
-			},
+		textColor: {
+			'primary-black': customColours.neutral[700],
+			'primary-white': customColours.white.DEFAULT,
+			'secondary-black': 'rgba(32, 33, 36, 0.8)',
+			'secondary-white': 'rgba(255, 255, 255, 0.75)',
+			'disabled-black': 'rgba(32, 33, 36, 0.65)',
+			'disabled-white': 'rgba(255, 255, 255, 0.6)'
 		},
 		extend: {
 			borderRadius: {

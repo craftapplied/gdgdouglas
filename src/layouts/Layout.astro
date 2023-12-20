@@ -1,0 +1,30 @@
+---
+import { SEO } from 'astro-seo';
+
+import type { Props as typeSEO } from 'astro-seo';
+
+import HtmlHead from '../components/HtmlHead.astro';
+import Header from '../components/header/Header.astro';
+import Footer from '../components/footer/Footer.astro';
+
+export interface Props extends typeSEO {}
+
+const { ...seo } = Astro.props as Props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth bg-core-blue-500 px-4">
+  <HtmlHead>
+    <SEO {...seo} />
+  </HtmlHead>
+
+  <Header />
+
+  <body>
+    <main id="main">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
