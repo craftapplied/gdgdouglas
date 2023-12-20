@@ -53,6 +53,7 @@ function Navigation() {
         </button>
 
         <ul
+          class="flex gap-8"
           classList={{
             '': menuOpen(),
             'hidden md:flex': !menuOpen(),
