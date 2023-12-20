@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    overflow-y: scroll;
+  }
+}
+
+@font-face {
+  font-family: 'Google Sans Display';
+  src: local('Google Sans Display Regular'), local('GoogleSansDisplay-Regular'),
+      url('/fonts/GoogleSansDisplay-Regular.woff2') format('woff2'),
+      url('/fonts/GoogleSansDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Google Sans Display';
+  src: local('Google Sans Display Bold'), local('GoogleSansDisplay-Bold'),
+      url('/fonts.GoogleSansDisplay-Bold.woff2') format('woff2'),
+      url('/GoogleSansDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
