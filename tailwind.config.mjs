@@ -68,6 +68,21 @@ export default {
 		colors: {
 			...customColours,
 		},
+		fontSize: {
+			'headline-100': ['2.25rem', 1.25],
+			'headline-200': ['1.5rem', 1.25],
+			'headline-300': ['1.25rem', 1.25],
+			'paragraph-100': ['1rem', 1.5],
+			'paragraph-200': ['0.875rem', 1.5],
+			'paragraph-300': ['0.75rem', 1.5],
+			'paragraph-400': ['0.625rem', 1.5],
+			'button-100': ['1rem', 1],
+			'button-200': ['0.75rem', 1],
+			'label-100': ['1rem', 1],
+			'label-200': ['0.875rem', 1],
+			'label-300': ['0.75rem', 1],
+			'label-400': ['0.625rem', 1]
+		},
 		textColors: {
 			primary: {
 				black: customColours.neutral[700],
