@@ -68,6 +68,12 @@ export default {
 		colors: {
 			...customColours,
 		},
+		boxShadow: {
+			100: '0 0.125rem 0.5rem 0 rgba(1, 43, 115, 0.12)',
+			200: '0 0.25rem 0.75rem 0 rgba(1, 43, 115, 0.16)',
+			300: '0 0.5rem 1rem 0 rgba(1, 43, 115, 0.12)',
+			400: '0 0.5rem 2rem 0 rgba(1, 43, 115, 0.16)'
+		},
 		fontSize: {
 			'headline-100': ['2.25rem', 1.25],
 			'headline-200': ['1.5rem', 1.25],
@@ -119,7 +125,17 @@ export default {
 				white: 'rgba(255, 255, 255, 0.6)'
 			},
 		},
-		extend: {},
+		extend: {
+			borderRadius: {
+				4: '1rem',
+				6: '1.5rem',
+				8: '2rem',
+				12: '3rem',
+				16: '4rem',
+				arch: '10rem 10rem 5rem 5rem',
+				'half-arch': '1rem 10rem 5rem 1rem'
+			}
+		},
 	},
 	plugins: [],
 }
