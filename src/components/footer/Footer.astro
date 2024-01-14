@@ -8,13 +8,13 @@ const footerNavigation = [
 
 <footer
   id="footer"
-  class="grid mt-auto md:pt-10 xl:pt-20 md:pb-6 xl:pb-12 text-primary-white text-body-md"
+  class="grid mt-auto text-primary-white text-body-md md:pt-10 md:pb-6 xl:pt-20 xl:pb-12"
 >
   <div class="container">
     {
       footerNavigation && (
         <nav class="py-6 xl:py-12">
-          <ul class="flex flex-wrap gap-2 md:gap-4 xl:gap-8 justify-center align-middle">
+          <ul class="flex justify-center align-middle gap-2 flex-wrap md:gap-4 xl:gap-8">
             {footerNavigation.map((item) => (
               <li>
                 <a href={item.url}>{item.title}</a>
