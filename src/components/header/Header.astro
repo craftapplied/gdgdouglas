@@ -12,7 +12,10 @@ import Navigation from './Navigation.tsx';
   class="text-primary-white py-6 text-body-md md:mt-6 xl:mt-12 md:mb-10 xl:mb-20"
 >
   <div class="container">
-    <nav class="flex flex-wrap gap-8 justify-between items-center">
+    <nav
+      class="flex flex-wrap gap-8 justify-between items-center"
+      aria-label="Main menu"
+    >
       <Brand />
       <Navigation client:load />
     </nav>
