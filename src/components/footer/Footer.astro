@@ -1,7 +1,28 @@
 ---
-
+const footerNavigation = [
+  { title: 'hello@gdgdouglas.com', url: 'mailto:hello@gdgdouglas.com' },
+  { title: 'Privacy Policy', url: '/privacy-policy' },
+  { title: 'Terms of Service', url: '/terms-of-service' },
+];
 ---
 
-<footer id="footer" class="grid mt-auto">
-  <div class="container">Footer</div>
+<footer
+  id="footer"
+  class="grid mt-auto md:pt-10 xl:pt-20 md:pb-6 xl:pb-12 text-primary-white text-body-md"
+>
+  <div class="container">
+    {
+      footerNavigation && (
+        <nav class="py-6 xl:py-12">
+          <ul class="flex flex-wrap gap-2 md:gap-4 xl:gap-8 justify-center align-middle">
+            {footerNavigation.map((item) => (
+              <li>
+                <a href={item.url}>{item.title}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+  </div>
 </footer>
