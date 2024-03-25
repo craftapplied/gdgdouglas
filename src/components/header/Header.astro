@@ -3,13 +3,16 @@ import Brand from './Brand.astro';
 import Navigation from './Navigation.tsx';
 ---
 
-<a href="#main" class="sr-only focus:not-sr-only focus:absolute h-fit w-fit">
+<a
+  href="#main"
+  class="sr-only focus:not-sr-only focus:absolute h-fit w-fit z-20"
+>
   Skip to content
 </a>
 
 <header
   id="header"
-  class="text-primary-white py-6 text-body-md md:mt-6 xl:mt-12 md:mb-10 xl:mb-20"
+  class="text-primary-white py-6 text-body-md md:mt-6 xl:mt-12 md:mb-10 xl:mb-20 z-10"
 >
   <div class="container">
     <nav
