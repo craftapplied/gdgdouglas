@@ -8,9 +8,11 @@ import splashIllustration from '../../../images/illustration-home-splash.png';
   <div class="container">
     <!-- Note(HG): Add grid gap-16 classes to content wrapper -->
     <!-- Note(HG): Will need to adjust image-wrapper:before as a result -->
-    <div class="content-wrapper bg-white rounded-16 py-24 px-28 grid gap-16">
+    <div
+      class="content-wrapper bg-white rounded-8 lg:rounded-16 py-12 xl:py-24 px-6 md:px-14 xl:px-28 grid gap-8 xl:gap-16"
+    >
       <div
-        class="image-wrapper relative flex justify-center align-middle w-[fit-content] mx-auto before:content-[''] before:bg-core-blue-500 before:absolute before:inset-0 before:rounded-arch before:opacity-[0.12] before:mx-[-6rem] before:w-[calc(100% + 7.5rem)] mt-10 mb-8"
+        class="image-wrapper relative flex justify-center align-middle w-full md:w-[fit-content] mx-auto before:content-[''] before:bg-core-blue-500 before:absolute before:inset-0 before:rounded-arch before:opacity-[0.12] px-[-0.5rem] md:before:mx-[-2.5rem] xl:before:mx-[-6rem] before:w-[calc(100% + 7.5rem)] mt-10 mb-8"
       >
         <Image
           src={splashIllustration}
@@ -21,13 +23,13 @@ import splashIllustration from '../../../images/illustration-home-splash.png';
 
       <h1
         id="home-splash--heading"
-        class="text-display-lg font-bold text-center"
+        class="text-headline-lg sm:text-display-sm lg:text-display-lg font-bold text-center"
       >
         Building Beyond Technology
       </h1>
 
       <div
-        class="text-wrapper px-20 grid grid-cols-2 gap-x-20 gap-y-4 text-paragraph-50"
+        class="text-wrapper px-6 md:px-12 xl:px-20 grid lg:grid-cols-2 gap-x-20 gap-y-4 text-paragraph-100 md:text-paragraph-50"
       >
         <p>
           Join us at the Douglas Google Developers Event, a monthly gathering of
@@ -43,7 +45,7 @@ import splashIllustration from '../../../images/illustration-home-splash.png';
 
       <a
         href="#"
-        class="mx-auto text-button-50 bg-black px-6 py-4 rounded-full font-bold text-primary-white ring-2 ring-transparent ring-offset-2 hover:ring-black focus:ring-black focus:outline-none"
+        class="mx-auto text-button-100 md:text-button-50 bg-black px-6 py-4 rounded-full font-bold text-primary-white ring-2 ring-transparent ring-offset-2 hover:ring-black focus:ring-black focus:outline-none"
       >
         Join the community</a
       >
