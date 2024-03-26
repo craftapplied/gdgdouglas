@@ -13,14 +13,16 @@ const { ...seo } = Astro.props as Props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth bg-core-blue-500 px-4">
+<html lang="en" class="scroll-smooth">
   <HtmlHead>
     <SEO {...seo} />
   </HtmlHead>
 
   <Header />
 
-  <body class="min-h-screen flex flex-col">
+  <body
+    class="min-h-screen bg-core-blue-500 flex flex-col px-4 overflow-hidden"
+  >
     <main id="main">
       <slot />
     </main>
