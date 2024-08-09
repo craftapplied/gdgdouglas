@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 
 import Splash from './_components/Splash.astro';
 import Contact from './_components/Contact.astro';
+import Organisers from './_components/Organisers.astro';
 ---
 
 <Layout
@@ -16,8 +17,9 @@ import Contact from './_components/Contact.astro';
     },
   }}
 >
-  <div class="container">
+  <div class="container flex flex-col gap-20">
     <Splash />
+    <Organisers />
     <Contact />
   </div>
 </Layout>
