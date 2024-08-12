@@ -9,7 +9,7 @@ interface MenuItem {
 }
 
 function Navigation() {
-  const [menuOpen, setMenuOpen] = createSignal<boolean>(false);
+  const [isMenuOpen, setMenuOpen] = createSignal<boolean>(false);
 
   const [menuItems, setMenuItems] = createSignal<MenuItem[]>([
     { title: 'Upcoming Events', url: '#upcoming-events' },
@@ -18,7 +18,7 @@ function Navigation() {
   ]);
 
   const toggleNavigation = () => {
-    setMenuOpen(!menuOpen());
+    setMenuOpen(!isMenuOpen());
   };
 
   return (
@@ -26,43 +26,48 @@ function Navigation() {
       <div
         classList={{
           'fixed inset-0 grid isolate bg-white m-4 rounded-4 text-primary-black grid-rows-[max-content_1fr] p-8 text-center':
-            menuOpen(),
+            isMenuOpen(),
         }}
         class="navigation-wrapper"
       >
         <button
           onClick={toggleNavigation}
           class="md:hidden"
-          classList={{ 'ml-auto': menuOpen() }}
+          classList={{ 'ml-auto': isMenuOpen() }}
         >
-          <span
-            class="open-menu-wrapper"
-            classList={{
-              hidden: menuOpen(),
-              '': !menuOpen(),
-            }}
-          >
-            Open icon
-            <span class="sr-only">Open navigation menu</span>
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d={
+                isMenuOpen()
+                  ? 'M2,2 l0,2 l18,18 l2,0 l0,-2 l-18,-18 Z'
+                  : 'M2,5 l20,0 l0,2 l-20,0 Z'
+              }
+              fill="currentcolor"
+            />
+            <path
+              d={isMenuOpen() ? 'M12,12 Z' : 'M2,11 l20,0 l0,2 l-20,0 Z'}
+              fill="currentcolor"
+            />
+            <path
+              d={
+                isMenuOpen()
+                  ? 'M2,22 l0,-2 l18,-18 l2,0 l0,2 l-18,18 Z'
+                  : 'M2,17 l20,0 l0,2 l-20,0 Z'
+              }
+              fill="currentcolor"
+            />
+          </svg>
+          <span class="sr-only">
+            {isMenuOpen() ? 'Close navigation menu' : 'Open navigation menu'}
           </span>
-          <div
-            class="close-menu-wrapper"
-            classList={{
-              '': menuOpen(),
-              hidden: !menuOpen(),
-            }}
-          >
-            Close icon
-            <span class="sr-only">Close navigation menu</span>
-          </div>
         </button>
 
         <ul
           class=""
           classList={{
             'grid my-auto text-headline-sm sm:text-headline-lg !font-bold gap-16 p-8':
-              menuOpen(),
-            'hidden gap-8 md:flex': !menuOpen(),
+              isMenuOpen(),
+            'hidden gap-8 md:flex': !isMenuOpen(),
           }}
         >
           <For each={menuItems()}>
@@ -70,7 +75,7 @@ function Navigation() {
               <li>
                 <NavLink
                   item={item}
-                  menuOpen={menuOpen}
+                  menuOpen={isMenuOpen}
                   setMenuOpen={setMenuOpen}
                 />
               </li>
@@ -81,7 +86,7 @@ function Navigation() {
         <div
           class="divider"
           classList={{
-            hidden: !menuOpen(),
+            hidden: !isMenuOpen(),
           }}
         ></div>
       </div>
