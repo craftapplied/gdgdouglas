@@ -18,11 +18,11 @@ const { ...seo } = Astro.props as Props;
     <SEO {...seo} />
   </HtmlHead>
 
-  <Header />
-
   <body
     class="min-h-screen bg-core-blue-500 flex flex-col px-4 overflow-hidden"
   >
+    <Header />
+
     <main id="main">
       <slot />
     </main>
