@@ -11,8 +11,8 @@
 @font-face {
   font-family: 'Google Sans Display';
   src: local('Google Sans Display Regular'), local('GoogleSansDisplay-Regular'),
-      url('/fonts/GoogleSansDisplay-Regular.woff2') format('woff2'),
-      url('/fonts/GoogleSansDisplay-Regular.woff') format('woff');
+    url('/fonts/GoogleSansDisplay-Regular.woff2') format('woff2'),
+    url('/fonts/GoogleSansDisplay-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -21,10 +21,42 @@
 @font-face {
   font-family: 'Google Sans Display';
   src: local('Google Sans Display Bold'), local('GoogleSansDisplay-Bold'),
-      url('/fonts/GoogleSansDisplay-Bold.woff2') format('woff2'),
-      url('/fonts/GoogleSansDisplay-Bold.woff') format('woff');
+    url('/fonts/GoogleSansDisplay-Bold.woff2') format('woff2'),
+    url('/fonts/GoogleSansDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: block;
 }
 
+
+@layer components {
+  .btn {
+    @apply block;
+    @apply rounded-full;
+    @apply font-sans;
+    @apply font-bold;
+    @apply text-button-100;
+
+    border: 1px solid currentColor;
+    padding: theme(padding.3) theme(padding.4);
+    width: max-content;
+  }
+
+  .btn-solid {
+    @apply border-neutral-700;
+    @apply text-primary-white;
+    @apply bg-neutral-700;
+  }
+
+  .btn-outline {
+    @apply border-neutral-300;
+    @apply text-primary-black;
+    @apply bg-transparent;
+  }
+
+  .btn-md {
+    @apply text-button-50;
+
+    padding: theme(padding.4) theme(padding.6);
+  }
+}

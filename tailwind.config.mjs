@@ -85,7 +85,8 @@ export default {
 			100: '0 0.125rem 0.5rem 0 rgba(1, 43, 115, 0.12)',
 			200: '0 0.25rem 0.75rem 0 rgba(1, 43, 115, 0.16)',
 			300: '0 0.5rem 1rem 0 rgba(1, 43, 115, 0.12)',
-			400: '0 0.5rem 2rem 0 rgba(1, 43, 115, 0.16)'
+			400: '0 0.5rem 2rem 0 rgba(1, 43, 115, 0.16)',
+			'popcard': '.5rem .5rem 0 0 rgba(32, 33, 36, 1)'
 		},
 		fontFamily: {
 			sans: ['Google Sans Display', 'sans-serif']
