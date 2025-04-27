@@ -1,17 +1,29 @@
 # GDG Douglas
 
-## Getting Started
+## Overview
 
-Run the standalone Astro development on [http://localhost:4321](http://localhost:4321):
+Landing page built with [Astro](https://astro.build) and styled with [Taiwlind](https://tailwindcss.com/).
+
+## Dev
 
 ```zsh
+# Install
+pnpm install
+
+# Run
 pnpm run dev
 ```
 
-## Associated Docs
+Development build should run on [https://localhost:4321](https://localhost:4321).
 
-- [Astro documentation](https://docs.astro.build/en/)
+## Deploy
 
-## Key Dependencies
+Hosted on [CraftApplied.dev](https://craftapplied.dev) [Coolify](https://www.coolify.io/) server.
 
-- [Astro](https://astro.build/)
+Pull Request to `staging` branch to auto-deploy to [Staging](https://gdgdouglas.craftapplied.dev).
+Pull Request to `main` branch to auto-deploy to [Production](https://gdgdouglas.com).
+
+Reference for configuring Astro to deploy to Coolify:
+
+- [How to Deploy an Astro Site Using Coolify](https://crockettford.dev/blog/astro-with-coolify)
+- [How to Deploy an SSR Astro site to your VPS using Coolify](https://crockettford.dev/blog/astro-ssr-with-coolify)
