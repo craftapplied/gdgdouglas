@@ -1,0 +1,18 @@
+---
+interface Props {
+  data?: string | [string, string];
+  class?: string;
+}
+const { class: cls = 'btn btn-solid', data } = Astro.props;
+
+if (!data) {
+  return void 0;
+}
+
+const cta = [
+  typeof data === 'string' ? 'Register' : data[0],
+  typeof data === 'string' ? data : data[1],
+];
+---
+
+<a class={cls} href={cta[1]}>{cta[0]}</a>
