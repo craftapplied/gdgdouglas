@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import Splash from './_components/Splash.astro';
+import Contact from './_components/Contact.astro';
+import Organisers from './_components/Organisers.astro';
+import UpcomingEvents from './_components/UpcomingEvents.astro';
+---
+
+<Layout
+  title="GDG Douglas | Building Beyond Technology"
+  description=""
+  openGraph={{
+    basic: {
+      title: 'GDG Douglas | Building Beyond Technology',
+      type: 'website',
+      image: '/og/default.jpg',
+    },
+  }}
+>
+  <div class="container flex flex-col gap-20">
+    <Splash />
+    <UpcomingEvents />
+    <Organisers />
+    <Contact />
+  </div>
+</Layout>

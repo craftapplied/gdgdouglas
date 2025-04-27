@@ -1,3 +1,19 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@image/*": [
+        "src/images/*"
+      ],
+      "@util/*": [
+        "src/utils/*"
+      ],
+      "@component/*": [
+        "src/components/*"
+      ],
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+  }
 }
