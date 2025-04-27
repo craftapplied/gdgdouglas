@@ -12,9 +12,10 @@ function Navigation() {
   const [isMenuOpen, setMenuOpen] = createSignal<boolean>(false);
 
   const [menuItems, setMenuItems] = createSignal<MenuItem[]>([
-    { title: 'Upcoming Events', url: '#upcoming-events' },
-    { title: 'Past Events', url: '#past-events' },
+    // { title: 'Upcoming Events', url: '#upcoming-events' },
+    // { title: 'Past Events', url: '#past-events' },
     { title: 'Organisers', url: '#organisers' },
+    { title: 'Contact', url: '#contact' },
   ]);
 
   const toggleNavigation = () => {
