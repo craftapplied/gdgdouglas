@@ -32,12 +32,14 @@ import contactIllustration from '../../../images/illustration-home-contact.png';
         class="text-wrapper px-6 md:px-12 xl:px-20 grid gap-x-20 gap-y-4 text-headline-400 md:text-headline-300 text-center max-w-[50rem] mx-auto"
       >
         <p>
-          Join us at your choice of platform for a casual chat with community
+          Join us on your favourite platform for casual chat with community
           members and news of upcoming events:
         </p>
       </div>
 
-      <ul class="grid grid-cols-3 gap-8 flex-wrap mx-auto text-center">
+      <ul
+        class="grid grid-cols-2 sm:grid-cols-4 gap-8 flex-wrap mx-auto text-center"
+      >
         <li class="grid gap-2">
           <a
             href="https://gdg.community.dev/gdg-douglas/"
@@ -45,7 +47,7 @@ import contactIllustration from '../../../images/illustration-home-contact.png';
             target="_blank"
             rel="noopener noreferrer"
           >
-            <figure>
+            <figure class="flex flex-col justify-between items-center h-full">
               <Icon name="logomark-gdg" class="max-w-[4.5rem] w-full" />
               <figcaption>GDG</figcaption>
             </figure>
@@ -58,7 +60,7 @@ import contactIllustration from '../../../images/illustration-home-contact.png';
             target="_blank"
             rel="noopener noreferrer"
           >
-            <figure>
+            <figure class="flex flex-col justify-between items-center h-full">
               <Icon name="logomark-linkedin" class="max-w-[4.5rem] w-full" />
               <figcaption>LinkedIn</figcaption>
             </figure>
@@ -72,9 +74,27 @@ import contactIllustration from '../../../images/illustration-home-contact.png';
             target="_blank"
             rel="noopener noreferrer"
           >
-            <figure>
+            <figure class="flex flex-col justify-between items-center h-full">
               <Icon name="logomark-meetup" class="max-w-[4.5rem] w-full" />
               <figcaption>Meetup</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="grid gap-2">
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/p/GDG-Douglas-61556547966576/"
+            class="text-paragraph-100 md:text-paragraph-50 no-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="flex flex-col justify-between items-center h-full">
+              <div
+                class="max-w-[4.5rem] w-full aspect-square flex justify-center items-center"
+              >
+                <Icon name="logomark-facebook" class="max-w-[4rem] w-full" />
+              </div>
+              <figcaption>Facebook</figcaption>
             </figure>
           </a>
         </li>
