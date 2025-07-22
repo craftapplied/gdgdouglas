@@ -1,4 +1,6 @@
 ---
+import Icon from 'astro-icon';
+
 const footerNavigation = [
   // { title: 'hello@gdgdouglas.com', url: 'mailto:hello@gdgdouglas.com' },
   {
@@ -21,12 +23,24 @@ const footerNavigation = [
           <ul class="flex justify-center align-middle gap-2 flex-wrap md:gap-4 xl:gap-8">
             {footerNavigation.map((item) => (
               <li>
-                <a href={item.url}>{item.title}</a>
+                <a href={item.url} class="hover:underline">
+                  {item.title}
+                </a>
               </li>
             ))}
           </ul>
         </nav>
       )
     }
+    <p class="text-center flex items-center gap-1 mx-auto w-fit">
+      Powered by <a
+        class="hover:underline hover:opacity-75"
+        href="https://craftapplied.com/"
+        rel="noopener noreferrer "
+        target="_blank"
+      >
+        <Icon name="logomark-craftapplied" class="max-w-[7rem] w-full" />
+      </a>
+    </p>
   </div>
 </footer>
