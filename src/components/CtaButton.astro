@@ -2,6 +2,7 @@
 interface Props {
   data?: string | [string, string];
   class?: string;
+  target?: '_blank' | '_self' | '_parent' | '_top';
 }
 const { class: cls = 'btn btn-solid', data } = Astro.props;
 
@@ -13,6 +14,15 @@ const cta = [
   typeof data === 'string' ? 'Register' : data[0],
   typeof data === 'string' ? data : data[1],
 ];
+
+const target = Astro.props.target || '_self';
 ---
 
-<a class={cls} href={cta[1]}>{cta[0]}</a>
+<a
+  class={cls}
+  href={cta[1]}
+  target={target}
+  rel={target === '_blank' ? 'noopener noreferrer' : ''}
+>
+  {cta[0]}
+</a>

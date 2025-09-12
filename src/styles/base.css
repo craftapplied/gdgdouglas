@@ -10,7 +10,9 @@
 
 @font-face {
   font-family: 'Google Sans Display';
-  src: local('Google Sans Display Regular'), local('GoogleSansDisplay-Regular'),
+  src:
+    local('Google Sans Display Regular'),
+    local('GoogleSansDisplay-Regular'),
     url('/fonts/GoogleSansDisplay-Regular.woff2') format('woff2'),
     url('/fonts/GoogleSansDisplay-Regular.woff') format('woff');
   font-weight: normal;
@@ -20,7 +22,9 @@
 
 @font-face {
   font-family: 'Google Sans Display';
-  src: local('Google Sans Display Bold'), local('GoogleSansDisplay-Bold'),
+  src:
+    local('Google Sans Display Bold'),
+    local('GoogleSansDisplay-Bold'),
     url('/fonts/GoogleSansDisplay-Bold.woff2') format('woff2'),
     url('/fonts/GoogleSansDisplay-Bold.woff') format('woff');
   font-weight: bold;
@@ -28,14 +32,9 @@
   font-display: block;
 }
 
-
 @layer components {
   .btn {
-    @apply block;
-    @apply rounded-full;
-    @apply font-sans;
-    @apply font-bold;
-    @apply text-button-100;
+    @apply block rounded-full font-sans font-bold text-button-100;
 
     border: 1px solid currentColor;
     padding: theme(padding.3) theme(padding.4);
@@ -55,7 +54,7 @@
   }
 
   .btn-md {
-    @apply text-button-50;
+    @apply text-button-100 lg:text-button-50;
 
     padding: theme(padding.4) theme(padding.6);
   }

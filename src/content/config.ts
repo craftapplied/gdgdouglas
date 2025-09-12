@@ -26,8 +26,8 @@ const event = z.object({
     duration: z.number(), // unit: hour
   }),
   location: z.tuple([z.string().trim(), z.string().url()]),
-  type: z.enum(['Speaker Session']),
-  topic: z.enum(['Tech Talk']),
+  type: z.enum(['Speaker Session', 'Study Group']),
+  topic: z.enum(['Tech Talk', 'Meetup']),
   thumbnail: z.string().regex(regexImgFile).optional(),
   cta: z
     .union([z.tuple([z.string().trim(), z.string().url()]), z.string().url()])
