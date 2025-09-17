@@ -1,8 +1,6 @@
 import { For, createSignal } from 'solid-js';
 import NavLink from './NavLink.tsx';
 
-interface Props {}
-
 interface MenuItem {
   title: string;
   url: string;
@@ -12,7 +10,7 @@ function Navigation() {
   const [isMenuOpen, setMenuOpen] = createSignal<boolean>(false);
 
   const [menuItems, setMenuItems] = createSignal<MenuItem[]>([
-    // { title: 'Upcoming Events', url: '#upcoming-events' },
+    { title: 'Upcoming Events', url: '#upcoming-events' },
     // { title: 'Past Events', url: '#past-events' },
     { title: 'Organisers', url: '#organisers' },
     { title: 'Contact', url: '#contact' },
